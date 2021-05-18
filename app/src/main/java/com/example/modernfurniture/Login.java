@@ -25,7 +25,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Login extends AppCompatActivity {
     EditText mEmail,mPassword;
     Button mLoginBtn;
-    TextView mCreateBtn,forgotTextLink;
+    TextView mCreateBtn,forgotTextLink, adminBtn;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
 
@@ -41,6 +41,7 @@ public class Login extends AppCompatActivity {
         mLoginBtn = findViewById(R.id.btnlogin);
         mCreateBtn = findViewById(R.id.textViewSignUp);
         forgotTextLink = findViewById(R.id.forgotPass);
+        adminBtn = findViewById(R.id.textViewAdmin);
 
 
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
@@ -92,6 +93,13 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),Signup.class));
+            }
+        });
+
+        adminBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),admin_login.class));
             }
         });
 
