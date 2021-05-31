@@ -1,8 +1,12 @@
 package com.example.modernfurniture;
 
-public class Products {
+import java.io.Serializable;
+
+public class Products implements Serializable {
     private String name,type,imageUrl;
     private double price;
+
+    public Products(){}
 
     public Products(String name1, String type1, String imageUrl1, double price1){
         this.name = name1;

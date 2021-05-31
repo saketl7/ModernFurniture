@@ -8,7 +8,7 @@
     tools:context=".cart">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView4"
         android:layout_width="251dp"
         android:layout_height="70dp"
         android:text="Shopping Cart"
@@ -21,6 +21,84 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.037" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="370dp"
+        android:layout_height="464dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="1dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="389dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/horizontal_rule_24"
+        app:layout_constraintBottom_toTopOf="@+id/total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginRight="121dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Your Cart is Empty"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="389dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/horizontal_rule_24"
+        app:layout_constraintBottom_toTopOf="@+id/btnbuy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total" />
+
+    <Button
+        android:id="@+id/btnbuy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/button_bg"
+        android:text="Buy Now"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#555555"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintWidth_percent="0.8" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"

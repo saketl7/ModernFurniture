@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_orderReport">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="243dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="673dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Order Report"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/Anavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Anavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button_bg"
+        android:elevation="2dp"
+        app:itemIconSize="27dp"
+        app:itemIconTint="@drawable/item_selector2"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head"
+        app:menu="@menu/admin_nav" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

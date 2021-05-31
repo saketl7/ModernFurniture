@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item1"
+        android:layout_width="231dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/Wimage"
+                android:layout_width="214dp"
+                android:layout_height="157dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="9dp"
+                android:src="@drawable/baseline_image"
+                app:layout_constraintBottom_toTopOf="@+id/Wdelete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/Wdelete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/delete_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Wimage" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

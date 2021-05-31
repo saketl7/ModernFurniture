@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsPage">
+
+    <ImageView
+        android:id="@+id/Dimage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/baseline_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="368dp"
+        android:layout_height="476dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="22dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dimage">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="43dp"
+                android:id="@+id/D360"
+                android:layout_marginStart="27dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/button_bg"
+                android:drawableTop="@drawable/ic_baseline_360"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/Dnamefill"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Dname"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Dprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="20dp"
+                android:text="Price:"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                app:layout_constraintBottom_toTopOf="@+id/Dtype"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/Dnamefill"
+                android:layout_width="253dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="124dp"
+                android:layout_marginRight="124dp"
+                android:layout_marginBottom="21dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Dprice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Dname" />
+
+            <TextView
+                android:id="@+id/Dname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="196dp"
+                android:layout_marginRight="196dp"
+                android:text="Product Name:"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Dpricefill"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:text="6000"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Dprice"
+                app:layout_constraintTop_toBottomOf="@+id/Dnamefill" />
+
+            <TextView
+                android:id="@+id/Dtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="251dp"
+                android:text="Category:"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/Dtypefill"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Dprice" />
+
+            <TextView
+                android:id="@+id/Dtypefill"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="253dp"
+                android:text="Table"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Dtype"
+                app:layout_constraintTop_toBottomOf="@+id/Dpricefill" />
+
+            <ImageView
+                android:id="@+id/Dminus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="53dp"
+                android:layout_marginBottom="156dp"
+                android:src="@drawable/remove_circle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/Dquantity"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Dtype"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/Dplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="127dp"
+                android:layout_marginRight="127dp"
+                android:layout_marginBottom="155dp"
+                android:src="@drawable/add_circle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Dquantity"
+                app:layout_constraintTop_toBottomOf="@+id/Dtypefill"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/Dquantity"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginBottom="155dp"
+                android:text="1"
+                android:textSize="23dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/Dplus"
+                app:layout_constraintStart_toEndOf="@+id/Dminus"
+                app:layout_constraintTop_toBottomOf="@+id/Dtypefill"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/Dcart"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:layout_marginLeft="84dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="84dp"
+                android:layout_marginRight="84dp"
+                android:layout_marginBottom="33dp"
+                android:background="@drawable/button_bg"
+                android:text="Add To Cart"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#555555"
+                app:layout_constraintBottom_toTopOf="@+id/Dwishlist"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Dplus" />
+
+            <Button
+                android:id="@+id/Dwishlist"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:layout_marginLeft="84dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="84dp"
+                android:layout_marginRight="84dp"
+                android:background="@drawable/button_bg"
+                android:text="Add To Wishlist"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#555555"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Dcart" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/Dback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="@+id/Dimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item1"
+        android:layout_width="326dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:cardBackgroundColor="@color/darkgrey"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--            <ImageView
+                android:id="@+id/Cimage"
+                android:layout_width="162dp"
+                android:layout_height="123dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="192dp"
+                android:layout_marginRight="192dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/baseline_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <TextView
+                android:id="@+id/Uemail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="aenaattreya@gmail.com"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/Uname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailfill" />
+
+            <TextView
+                android:id="@+id/Uname"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginRight="23dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Aena Attreya"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/UPno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/namefill"
+                app:layout_constraintTop_toBottomOf="@+id/Uemail" />
+
+            <TextView
+                android:id="@+id/UPno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginRight="44dp"
+                android:layout_marginBottom="17dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="8178218800"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/phonefill"
+                app:layout_constraintTop_toBottomOf="@+id/Uname" />
+
+            <TextView
+                android:id="@+id/phonefill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="17dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="User Phone no.: "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/UPno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Uname" />
+
+            <TextView
+                android:id="@+id/namefill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="User Name:"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/phonefill"
+                app:layout_constraintEnd_toStartOf="@+id/Uname"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Uemail" />
+
+            <TextView
+                android:id="@+id/emailfill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="255dp"
+                android:layout_marginRight="255dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Email:"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/Uemail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

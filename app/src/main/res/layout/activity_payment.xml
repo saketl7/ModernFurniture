@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+
+    <ImageView
+        android:id="@+id/Pback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Payment"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="349dp"
+        android:layout_height="589dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Option one:"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/option1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/black"
+            android:text="Cash On Delivery"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="110dp"
+            android:text="Option two: Card Payment"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <com.braintreepayments.cardform.view.CardForm
+            android:id="@+id/card_form"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/paybtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="720dp"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:text="Pay Now"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

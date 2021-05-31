@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Admin_userReport">
+
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="243dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="User Report"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/Usearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Usearch"
+        android:layout_width="342dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/search"
+        android:hint=" Search..."
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/darkgrey"
+        android:textColorHint="#919191"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="361dp"
+        android:layout_height="598dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="96dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Usearch">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="360dp"
+                android:layout_height="569dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="18dp"
+                android:scrollbars="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Anavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button_bg"
+        android:elevation="2dp"
+        app:itemIconSize="27dp"
+        app:itemIconTint="@drawable/item_selector2"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:menu="@menu/admin_nav" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

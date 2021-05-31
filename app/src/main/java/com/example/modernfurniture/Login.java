@@ -11,6 +11,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -18,16 +22,13 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 public class Login extends AppCompatActivity {
     EditText mEmail,mPassword;
     Button mLoginBtn;
     TextView mCreateBtn,forgotTextLink, adminBtn;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
+    String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,6 +90,10 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        if(fAuth.getCurrentUser() != null) {
+            userID = fAuth.getCurrentUser().getUid();
+            startActivity(new Intent(getApplicationContext(),gallery.class));}
+
         mCreateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -148,3 +153,4 @@ public class Login extends AppCompatActivity {
 
     }
 }
+

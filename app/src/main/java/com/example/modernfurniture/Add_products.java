@@ -1,28 +1,31 @@
 package com.example.modernfurniture;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class Add_products extends AppCompatActivity {
 
@@ -49,6 +52,38 @@ public class Add_products extends AppCompatActivity {
         name = findViewById(R.id.name);
         price = findViewById(R.id.price);
         type = findViewById(R.id.type);
+
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView)findViewById(R.id.Anavigation);
+        bottomNavigationView.setSelectedItemId(R.id.addP);
+        //navigation bar
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.addP:
+                        return true;
+
+                    case R.id.order:
+                        startActivity(new Intent(getApplicationContext(),Admin_orderReport.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.log:
+                        startActivity(new Intent(getApplicationContext(),Login.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.ureport:
+                        startActivity(new Intent(getApplicationContext(),Admin_userReport.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                }
+                return false;
+            }
+        });
 
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
@@ -89,6 +124,7 @@ public class Add_products extends AppCompatActivity {
                                                 @Override
                                                 public void onSuccess(DocumentReference documentReference) {
                                                     Toast.makeText(Add_products.this, "Product Added", Toast.LENGTH_LONG).show();
+                                                    finish();
                                                 }
                                             })
                                             .addOnFailureListener(new OnFailureListener() {

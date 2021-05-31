@@ -9,31 +9,32 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="393dp"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="396dp"
+        android:layout_height="167dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/card_view"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/add"
         tools:ignore="MissingConstraints" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
-        android:layout_width="353dp"
-        android:layout_height="579dp"
+        android:layout_width="347dp"
+        android:layout_height="551dp"
         android:layout_gravity="center"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@color/darkgrey"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp"
-        app:cardBackgroundColor="@color/darkgrey"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Anavigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView1"
@@ -41,7 +42,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="566dp">
+            android:layout_height="554dp">
 
             <Button
                 android:id="@+id/btnchoose"
@@ -191,6 +192,27 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Anavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button_bg"
+        android:elevation="2dp"
+        app:itemIconSize="27dp"
+        app:itemIconTint="@drawable/item_selector2"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view"
+        app:menu="@menu/admin_nav" />
 
 
 
