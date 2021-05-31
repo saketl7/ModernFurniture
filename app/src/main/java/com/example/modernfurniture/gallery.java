@@ -8,11 +8,6 @@ import android.text.TextWatcher;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -23,6 +18,11 @@ import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class gallery extends AppCompatActivity {
 
@@ -54,7 +54,7 @@ public class gallery extends AppCompatActivity {
                         return true;
 
                     case R.id.camera:
-                        startActivity(new Intent(getApplicationContext(),camera.class));
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 

@@ -12,6 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
+        <meta-data android:name="com.google.ar.core" android:value="required" />
+        <activity android:name=".Add_products"/>
         <activity android:name=".WishlistDetails" />
         <activity android:name=".DetailsPage" />
         <activity android:name=".SuccessPay" />
@@ -37,5 +39,10 @@
         <activity android:name=".Signup" />
         <activity android:name=".wishlist" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
 
 </manifest>

@@ -56,7 +56,7 @@ public class wishlist extends AppCompatActivity {
                         return true;
 
                     case R.id.camera:
-                        startActivity(new Intent(getApplicationContext(),camera.class));
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 
