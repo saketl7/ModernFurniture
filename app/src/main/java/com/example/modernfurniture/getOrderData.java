@@ -1,54 +1,37 @@
 package com.example.modernfurniture;
 
-public class getOrderData {
+import java.io.Serializable;
 
-    private String name, method;
+public class getOrderData implements Serializable {
+
+    private String method, orderId, address, userName;
     private String date;
     private String time;
-    private double price, quantity;
 
     public getOrderData() {
     }
 
-    public getOrderData(String name, String method, String date, String time, double price, double quantity) {
-        this.name = name;
+    public getOrderData(String method,String name, String orderId, String address, String date, String time) {
         this.method = method;
+        this.userName = name;
+        this.orderId = orderId;
+        this.address = address;
         this.date = date;
         this.time = time;
-        this.price = price;
-        this.quantity = quantity;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setMethod(String method) {
-        this.method = method;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public void setTime(String time) {
-        this.time = time;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public void setQuantity(double quantity) {
-        this.quantity = quantity;
-    }
-
-    public String getName() {
-        return name;
-    }
+    public String getUserName(){return userName;}
 
     public String getMethod() {
         return method;
+    }
+
+    public String getOrderId() {
+        return orderId;
+    }
+
+    public String getAddress() {
+        return address;
     }
 
     public String getDate() {
@@ -57,14 +40,6 @@ public class getOrderData {
 
     public String getTime() {
         return time;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public double getQuantity() {
-        return quantity;
     }
 }
 

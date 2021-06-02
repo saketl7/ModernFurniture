@@ -25,7 +25,6 @@ import java.util.List;
 public class Admin_userReport extends AppCompatActivity {
 
     public RecyclerView mRecycleView;
-    //public RecyclerView.Adapter mAdapter;
     public RecyclerView.LayoutManager mManager;
     private FirebaseFirestore db;
     EditText search;

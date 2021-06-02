@@ -29,7 +29,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/Cimage"
+                android:id="@+id/SCimage"
                 android:layout_width="162dp"
                 android:layout_height="123dp"
                 android:layout_marginTop="14dp"
@@ -43,7 +43,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/Cname"
+                android:id="@+id/SCname"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="7dp"
@@ -56,13 +56,13 @@
                 android:text="dinning chair"
                 android:textColor="@color/black"
                 android:textSize="20dp"
-                app:layout_constraintBottom_toTopOf="@+id/Cprice"
+                app:layout_constraintBottom_toTopOf="@+id/SCprice"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/Cimage"
+                app:layout_constraintStart_toEndOf="@+id/SCimage"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/Cprice"
+                android:id="@+id/SCprice"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="1dp"
@@ -73,13 +73,13 @@
                 android:text="7000"
                 android:textColor="@color/black"
                 android:textSize="20dp"
-                app:layout_constraintBottom_toTopOf="@+id/Cquantity"
+                app:layout_constraintBottom_toTopOf="@+id/SCquantity"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/text2"
-                app:layout_constraintTop_toBottomOf="@+id/Cname" />
+                app:layout_constraintTop_toBottomOf="@+id/SCname" />
 
             <TextView
-                android:id="@+id/Cquantity"
+                android:id="@+id/SCquantity"
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="3dp"
@@ -92,7 +92,7 @@
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/text1"
-                app:layout_constraintTop_toBottomOf="@+id/Cprice" />
+                app:layout_constraintTop_toBottomOf="@+id/SCprice" />
 
             <TextView
                 android:id="@+id/text1"
@@ -108,9 +108,9 @@
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/Cquantity"
-                app:layout_constraintStart_toEndOf="@+id/Cimage"
-                app:layout_constraintTop_toBottomOf="@+id/Cprice"
+                app:layout_constraintEnd_toStartOf="@+id/SCquantity"
+                app:layout_constraintStart_toEndOf="@+id/SCimage"
+                app:layout_constraintTop_toBottomOf="@+id/SCprice"
                 app:layout_constraintVertical_bias="1.0" />
 
             <TextView
@@ -126,24 +126,9 @@
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toTopOf="@+id/text1"
-                app:layout_constraintEnd_toStartOf="@+id/Cprice"
-                app:layout_constraintStart_toEndOf="@+id/Cimage" />
+                app:layout_constraintEnd_toStartOf="@+id/SCprice"
+                app:layout_constraintStart_toEndOf="@+id/SCimage" />
 
-            <ImageView
-                android:id="@+id/Cdelete"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="36dp"
-                android:layout_marginLeft="36dp"
-                android:layout_marginTop="61dp"
-                android:layout_marginEnd="6dp"
-                android:layout_marginRight="6dp"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/delete_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/Cquantity"
-                app:layout_constraintTop_toBottomOf="@+id/Cname" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

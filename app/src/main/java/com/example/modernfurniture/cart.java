@@ -36,16 +36,14 @@ public class cart extends AppCompatActivity {
 
     public RecyclerView mRecycleView;
     FirebaseAuth auth;
-    //public RecyclerView oRecycleView;
     public CartAdapter mAdapter;
-    //public OrderAdapter oAdapter;
     public RecyclerView.LayoutManager mManager;
     StorageReference folder;
     TextView total;
     Button btn;
     ArrayList<getCartData> list = new ArrayList<>();
-    //ArrayList<getOrderData> orderlist = new ArrayList<>();
     private FirebaseFirestore db;
+    int amount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,13 +109,6 @@ public class cart extends AppCompatActivity {
         mAdapter = new CartAdapter(list);
         mRecycleView.setLayoutManager(mManager);
         mRecycleView.setAdapter(mAdapter);
-
-        /*oRecycleView = findViewById(R.id.recyclerView4);
-        oRecycleView.setHasFixedSize(true);
-        mManager = new LinearLayoutManager(this);
-        oAdapter = new OrderAdapter(orderlist);
-        oRecycleView.setLayoutManager(mManager);
-        oRecycleView.setAdapter(oAdapter);*/
 
 
         mAdapter.setOnItemClickListener(new CartAdapter.OnItemClickListner() {

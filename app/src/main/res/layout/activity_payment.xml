@@ -26,12 +26,44 @@
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold" />
+    <EditText
+        android:id="@+id/Pname"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="85dp"
+        android:hint="Enter your name"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/darkgrey"
+        android:textColorHint="#919191"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp" />
+    <EditText
+        android:id="@+id/Paddress"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="145dp"
+        android:hint="Enter address"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/darkgrey"
+        android:textColorHint="#919191"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="349dp"
-        android:layout_height="589dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="357dp"
+        android:layout_height="527dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp"
         app:cardElevation="15dp">
@@ -47,9 +79,9 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/option1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/option1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="50dp"
             android:background="@color/black"
@@ -57,6 +89,7 @@
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -69,11 +102,11 @@
 
         <com.braintreepayments.cardform.view.CardForm
             android:id="@+id/card_form"
-            android:layout_marginTop="150dp"
-            android:layout_marginRight="0dp"
-            android:layout_centerHorizontal="true"
             android:layout_width="320dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="0dp" />
 
     </androidx.cardview.widget.CardView>
 
@@ -82,7 +115,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/paybtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="720dp"
+        android:layout_marginTop="750dp"
         android:background="@drawable/bg"
         android:gravity="center"
         android:text="Pay Now"
