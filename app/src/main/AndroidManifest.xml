@@ -19,7 +19,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name=".Summary"></activity>
+        <activity android:name=".Summary"/>
 
         <meta-data
             android:name="com.google.ar.core"
@@ -32,7 +32,6 @@
         <activity android:name=".Payment" />
         <activity android:name=".Admin_orderReport" />
         <activity android:name=".Admin_userReport" />
-        <activity android:name=".Add_products" />
         <activity android:name=".admin_login" />
         <activity android:name=".camera" />
         <activity android:name=".cart" />
