@@ -18,3 +18,6 @@ The software aims to deliver users with a virtual reality experience, so that th
 ## Overview
 The project mentioned here is an Android application that would require a database system with live data import/export capabilities for buying the items which suits best in the room and its availability as well as a central database to store various things like coloring of the room and seeing the frames placed in the room. 
 
+## Product Functions
+The product should allow users to access various designs/ painting options for their room before actually coloring it. They can even place objects virtually before buying them and would get recommendations of the same product’s availability.
+
