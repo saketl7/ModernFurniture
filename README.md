@@ -21,3 +21,6 @@ The project mentioned here is an Android application that would require a databa
 ## Product Functions
 The product should allow users to access various designs/ painting options for their room before actually coloring it. They can even place objects virtually before buying them and would get recommendations of the same product’s availability.
 
+## User Characteristics 
+The users include anyone who is designing the room without the help of interior designer and would like to do it on their own. It may also include the person who is not sure about buying the thing and would like to check it that how it looks when kept at a place before actually buying the product. Users who would like to paint their room.
+
