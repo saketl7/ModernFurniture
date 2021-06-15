@@ -24,3 +24,6 @@ The product should allow users to access various designs/ painting options for t
 ## User Characteristics 
 The users include anyone who is designing the room without the help of interior designer and would like to do it on their own. It may also include the person who is not sure about buying the thing and would like to check it that how it looks when kept at a place before actually buying the product. Users who would like to paint their room.
 
+## Similar System Information
+The application can be closely related to the Houzz Interior Design Ideas. and Design Home: House renovation. But the first app needs pro feature to access the camera and second app is basically a game where we can put all the things we like in a room and get points for it.
+
