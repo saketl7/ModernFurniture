@@ -27,3 +27,10 @@ The users include anyone who is designing the room without the help of interior 
 ## Similar System Information
 The application can be closely related to the Houzz Interior Design Ideas. and Design Home: House renovation. But the first app needs pro feature to access the camera and second app is basically a game where we can put all the things we like in a room and get points for it.
 
+## User Objectives
+The user can capture the photo of the room and then they can check various paint options or play a 3D models of various items and furniture in the virtual space on the phone screen users can visualize or find new interior design options, colours, objects, wall stickers, curtains etc. uses can also get recommend the places from where they have to buy these items.
+	
+
+
+
+
