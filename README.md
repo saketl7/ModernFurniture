@@ -31,4 +31,5 @@ The application can be closely related to the Houzz Interior Design Ideas. and D
 The user can capture the photo of the room and then they can check various paint options or play a 3D models of various items and furniture in the virtual space on the phone screen users can visualize or find new interior design options, colours, objects, wall stickers, curtains etc. uses can also get recommend the places from where they have to buy these items.
 	
 ## General Constraints
-Constraints include any easy to use interface for the application. The user may not upload files larger in size than 25 MB. Users will require Internet to test out the products in order to buy them. 
+Constraints include any easy to use interface for the application. The user may not upload files larger in size than 25 MB. Users will require Internet to test out the products in order to buy them. There may be the products out of stock so the user cannot buy them. There may be times where the product that does not seem to look like as the one which has been used in the app during AR test.
+
