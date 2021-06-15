@@ -37,10 +37,10 @@ Constraints include any easy to use interface for the application. The user may 
 The users will be provided with documentation and tutorials to ensure that their user experience is as informed as possible of all the functionalities involved.
 User Interfaces
 
-•	GUI
+*•GUI*
 The user interface for this program is created with the aim of giving the users a simple and easy to use interface that navigates users to the module of their choice with the least amount of hassle. So, on entering the home page itself, users can see a catalogue window which consists of various examples of kitchen, bedroom, hall etc with shoppable products option in it. Then there is a gallery page where user can capture pictures and try out AR feature. There is also a cart option where users can once again check the product they have added in the list, order the products and track it.
 
-•	CLI
+*•CLI*
 There is no command line interface provided to the user in the application.
 
 
