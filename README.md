@@ -9,3 +9,6 @@ When you decide to design your room or any other place you wish, this interior d
 ## Introduction
 The purpose of this document is to define and describe the requirements of the project and to provide readers with an understanding of the application’s functionalities and features.
 
+## Purpose
+The app is developed with the idea of providing users with a convenient way to ease and streamline their design of the room while supplying them with the Augmented Reality technology. It is best for the users who can't decide what would suit in their room and where.
+
