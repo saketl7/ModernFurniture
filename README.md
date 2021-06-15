@@ -33,3 +33,6 @@ The user can capture the photo of the room and then they can check various paint
 ## General Constraints
 Constraints include any easy to use interface for the application. The user may not upload files larger in size than 25 MB. Users will require Internet to test out the products in order to buy them. There may be the products out of stock so the user cannot buy them. There may be times where the product that does not seem to look like as the one which has been used in the app during AR test.
 
+## User Documentation
+The users will be provided with documentation and tutorials to ensure that their user experience is as informed as possible of all the functionalities involved.
+User Interfaces
