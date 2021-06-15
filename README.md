@@ -15,3 +15,6 @@ The app is developed with the idea of providing users with a convenient way to e
 ## Scope 
 The software aims to deliver users with a virtual reality experience, so that they can decide what would go best with the room before buying the thing. They can take a picture of the room and place 3D models of various items and furniture in the virtual space on the phone screen. They can visualize or find new interior design options, colors, objects, wall stickers, curtains, etc. moreover, the AR application can also recommend the places from where to buy these items.
 
+## Overview
+The project mentioned here is an Android application that would require a database system with live data import/export capabilities for buying the items which suits best in the room and its availability as well as a central database to store various things like coloring of the room and seeing the frames placed in the room. 
+
