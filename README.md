@@ -5,7 +5,7 @@ When you decide to design your room or any other place you wish, this interior d
 
 ## UI Design
 <p align="center">
-	src="https://github.com/saketlakhotia17/ModernFurniture/blob/master/user%20interface/ui.gif"
+	<img src="https://github.com/saketlakhotia17/ModernFurniture/blob/master/user%20interface/ui.gif">
 </p>
 
 ## Introduction
