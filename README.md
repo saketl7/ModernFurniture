@@ -44,4 +44,9 @@ The user interface for this program is created with the aim of giving the users 
 **•CLI**
 There is no command line interface provided to the user in the application.
 
+**•API**
+
+1.	API2Cart – for cart and shopping
+2.	ARCore – for Augmented Reality
+![image](https://user-images.githubusercontent.com/42898691/122093021-3f3e6700-ce28-11eb-8190-75d9799ff566.png)
 
